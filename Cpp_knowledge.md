@@ -172,4 +172,12 @@ int main(){
 
 `Null` is equivalent to 0 and is type int. `nullptr` represents an actual pointer.
 
+## What is the difference between references and pointers?
+A reference is an alias of a valid object/variable, used to avoid copying. Modifying a reference modifies the original object. A pointer stores the address of a variable, but it can also be initialized using nullptr. Pointers can be used to avoid copying large objects.
 
+References cannot be reassigned, while pointers can. References are useful in function arguments where you want to modify the passed variable or avoid copying.
+
+Pointers are used for dynamic memory allocation, working with arrays, and cases where you may need to reassign or manage memory explicitly.
+
+## What is the difference between memory allocation in stack and on heap?
+Stack memory is automatically deallocated when the variable goes out of scope. Heap memory requires deallocation.
