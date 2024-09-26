@@ -59,6 +59,14 @@ A FIFO Queue that allows passing variables between Tasks.
 
 A mutex is a mutual exclusion lock. It allows only one thread to access the data at a specificed location in memory. Are useful for dealing with race conditions.
 
+#### What is a Recurring Mutex?
+
+A mutex that allows the same thread to access the mutex several times.
+
+#### What is a rule to follow when using multiple mutexes for synchronization.
+
+Ensure you always unlock the mutexes in the same order to avoid starvation.
+
 ### 3. Semaphore
 
 A semaphore is similar to a mutex, but it allows multiple tasks the access the same piece of data. The semaphore only allows for a certain number of tasks to access the critical data concurrently.
